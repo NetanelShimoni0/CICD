@@ -11,8 +11,3 @@ install:
 script:
   - npm run test
 
-deploy:
-  - provider: s3
-    upload-dir: $TRAVIS_BRANCH
-    skip_cleanup: true
-    local_dir: ./dist
